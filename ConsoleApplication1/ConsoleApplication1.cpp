@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include <windows.h>
 
 using namespace std;
 
@@ -23,7 +24,6 @@ int main()
 	int griv, kop;
 	setlocale(LC_ALL, "Russian");
 
-
 	/*cout << "Введите кол-во гривень: ";
 	cin >> griv;
 	cout << "Введите кол-во копеек: ";
@@ -40,14 +40,22 @@ int main()
 	cout << "Pages\t\t: 500." << endl;
 	cout << "\n" << (char)201 << (char)205 << (char)205 << (char)205 << (char)205 << (char)205 << (char)187;
 	setlocale(LC_ALL, "Russian");
-	system("pause");
-	cout << "\n\a\a\a\"У лукоморья дуб зеленый," << endl;
-	system("pause");
-	cout << "\a\a\aЗлатая цепь на дубе том," << endl;
-	system("pause");
-	cout << "\a\a\aИ днём и ночью кот ученый" << endl;
-	system("pause");
-	cout << "\a\a\aВсё ходит по цепи кругом.\"" << endl;*/
+	Beep(400, 100);
+	Beep(400, 100);
+	Beep(400, 100);
+	cout << "\n\7\7\7\"У лукоморья дуб зеленый," << endl;
+	Beep(400, 100);
+	Beep(400, 100);
+	Beep(400, 100);
+	cout << "\7\7\7Златая цепь на дубе том," << endl;
+	Beep(400, 100);
+	Beep(400, 100);
+	Beep(400, 100);
+	cout << "\7\7\7И днём и ночью кот ученый" << endl;
+	Beep(400, 100);
+	Beep(400, 100);
+	Beep(400, 100);
+	cout << "\7\7\7Всё ходит по цепи кругом.\"" << endl;*/
 	/*cout << "\t\t  \"Hello, World!\"" << endl;
 	cout << "\t\t/Matthew Pastukhov/\n"<< endl;
 
