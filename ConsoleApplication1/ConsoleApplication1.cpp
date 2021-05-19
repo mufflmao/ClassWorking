@@ -5,20 +5,6 @@
 
 using namespace std;
 
-class PC {
-public:
-	string Videocard;
-	string Processor;
-	string Disk;
-	void print() {
-		cout << Videocard << Processor << Disk << endl;
-	}
-private:
-	string Cores;
-	string RAMSize;
-	string VideocardSize;
-};
-
 int main()
 {
 	/*int griv, kop, mash, sm;*/
