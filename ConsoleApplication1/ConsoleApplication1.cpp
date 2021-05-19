@@ -5,20 +5,6 @@
 
 using namespace std;
 
-class PC {
-public:
-	string Videocard;
-	string Processor;
-	string Disk;
-	void print() {
-		cout << Videocard << Processor << Disk << endl;
-	}
-private:
-	string Cores;
-	string RAMSize;
-	string VideocardSize;
-};
-
 int main()
 {
 	/*int griv, kop, mash, sm;*/
@@ -27,6 +13,9 @@ int main()
 	/*double n1, n2, summa, proiz, average;*/
 	/*double n1, n2, n3, summa, proiz, average;*/
 	setlocale(LC_ALL, "Russian");
+
+
+
 	/*double n1, n2, result;
 	int move;
 	cout << "Введите первое число: ";
