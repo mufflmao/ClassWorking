@@ -22,7 +22,171 @@ private:
 int main()
 {
 	/*int griv, kop, mash, sm;*/
+	/*int d, r, S, P;
+	float pi = 3.14; */
+	/*double n1, n2, summa, proiz, average;*/
+	/*double n1, n2, n3, summa, proiz, average;*/
 	setlocale(LC_ALL, "Russian");
+	int number;
+	cout << "Введите число: ";
+	cin >> number;
+	if (number % 2 == 0)
+	{
+		number = number * 3;
+		cout << number;
+	}
+	else
+	{
+		number = number / 2;
+		cout << number;
+	}
+	/*double gr1, gr2, gr3, gr4, gr5, avggr;
+	cout << "Введите первую оценку: ";
+	cin >> gr1;	
+	cout << "Введите вторую оценку: ";
+	cin >> gr2;
+	cout << "Введите третью оценку: ";
+	cin >> gr3;
+	cout << "Введите четвертую оценку: ";
+	cin >> gr4;
+	cout << "Введите пятую оценку: ";
+	cin >> gr5;
+	avggr = (gr1 + gr2 + gr3 + gr4 + gr5) / 5;
+	if (avggr >= 4)
+	{
+		cout << "Средний балл: " << avggr << " (Допущен(а))";
+	}
+	else
+	{
+		cout << "Средний балл: " << avggr << " (НЕ Допущен(а))";
+	}*/
+	/*int n1, n2;
+	cout << "Введите первое число: ";
+	cin >> n1;
+	cout << "Введите второе число: ";
+	cin >> n2;
+	if (n1 == n2)
+	{
+		cout << "Числа равны!";
+	}
+	if (n1 > n2)
+	{
+		cout << n2 << " " << n1;
+	}
+	else
+	{
+		cout << n1 << " " << n2;
+	}*/
+	/*int n1;
+	cout << "Введите число: ";
+	cin >> n1;
+	if (n1 == 0)
+	{
+		cout << "Число равно нулю!";
+	}
+	if (n1 > 0)
+	{
+		cout << "Число положительное!";
+	}
+	if (n1 < 0)
+	{
+		cout << "Число отрицательное!";
+	}*/
+	/*int n1, n2;
+	cout << "Введите первое число: ";
+	cin >> n1;
+	cout << "Введите второе число: ";
+	cin >> n2;
+	if (n1 == n2)
+	{
+		cout << "Числа равны!";
+	}
+	if (n1 > n2)
+	{
+		cout << "Первое число больше второго!";
+	}
+	else
+	{
+		cout << "Первое число меньше второго!";
+	}*/
+	/*int number;
+	cout << "Введите число: ";
+	cin >> number;
+	if (number % 2 == 0)
+	{
+		cout << "Число чётное!";
+	}
+	else
+	{
+		cout << "Число нечётное!";
+	}*/
+
+
+	/*double gbfilm, mgbps, timeneeded, gps;
+	cout << "Сколько весит фильм? (ГБ): ";
+	cin >> gbfilm;	
+	cout << "Скорость вашего интернета (в мегабитах в секунду): ";
+	cin >> mgbps;
+	gps = mgbps / 8000;
+	timeneeded = gps * 60;
+	cout << "Часов нужно будет: " << timeneeded;*/
+	//double gb, disketmemory = 0.024;
+	//int disket;
+	//cout << "Сколько гигабайт весит фильм?: ";
+	//cin >> gb;
+	//disket = gb / disketmemory;
+	//cout << "Понадобится " << disket << " дискет по 2.44 мб.";
+	/*double fTrading, totalgot, result;
+
+	cout << "Сколько менеджер заработал с продаж? ($): ";
+	cin >> totalgot;
+	fTrading = totalgot * 0.05;
+	result = fTrading + 100;
+	cout << "Итог: " << result << "$";*/
+	//int pcneed;
+	//double discount, realdiscount, cost, totalcost;
+	//cout << "Сколько ноутбуков нужно?: ";
+	//cin >> pcneed;
+	//cout << "Сколько стоит 1 ноутбук?: ";
+	//cin >> cost;
+	//cout << "Введите процент скидки (от 1-100): ";
+	//cin >> discount;
+	//realdiscount = 1 - (discount / 100);
+	//totalcost = cost * pcneed * realdiscount;
+	//cout << realdiscount << endl;
+	//cout << "Итоговая стоимость за " << pcneed << " ноутбуков: " << totalcost;
+	/*cout << "Введите первое число: ";
+	cin >> n1;
+	cout << "Введите второе число: ";
+	cin >> n2;	
+	cout << "Введите третье число: ";
+	cin >> n3;
+	summa = n1 + n2 + n3;
+	proiz = n1 * n2 * n3;
+	average = n1 + n2 + n3 / 3;
+	cout << "Сумма: " << summa << endl;
+	cout << "Произведение: " << proiz << endl;
+	cout << "Среднее арифметическое: " << average << endl;*/
+	/*cout << "Введите первое число: ";
+	cin >> n1;
+	cout << "Введите второе число: ";
+	cin >> n2;
+	summa = n1 + n2;
+	proiz = n1 * n2;
+	average = n1 + n2 / 2;
+	cout << "Сумма: " << summa << endl;
+	cout << "Произведение: " << proiz << endl;
+	cout << "Среднее арифметическое: " << average << endl;*/
+	/*cout << "Введите диаметр окружности: ";
+	cin >> d;
+	r = d / 2;
+	P = r * (2 * pi);
+	S = pi * (r * r);
+	cout << "Периметр окружности: " << P << endl;
+	cout << "Площадь окружности: " << S << endl;*/
+
+	
+	
 	/*cout << "Вычисление расстояние между населенными пунктами" << endl;
 	cout << "Введите исходные данные: " << endl;
 	cout << "Масштаб карты (количество километров в одном сантиметре) -> ";
