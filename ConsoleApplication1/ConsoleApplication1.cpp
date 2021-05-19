@@ -27,7 +27,32 @@ int main()
 	/*double n1, n2, summa, proiz, average;*/
 	/*double n1, n2, n3, summa, proiz, average;*/
 	setlocale(LC_ALL, "Russian");
-	int number;
+	/*double n1, n2, result;
+	int move;
+	cout << "Введите первое число: ";
+	cin >> n1;
+	cout << "Введите второе число: ";
+	cin >> n2;
+	cout << "Выберите действие.\n1. +\n2. -\n3. *\n4. /\nВаш выбор: ";
+	cin >> move;
+	if (move == 1)
+	{
+		result = n1 + n2;
+	}
+	if (move == 2)
+	{
+		result = n1 - n2;
+	}
+	if (move == 3)
+	{
+		result = n1 * n2;
+	}
+	if (move == 4)
+	{
+		result = n1 / n2;
+	}
+	cout << "Ответ: " << result;*/
+	/*int number;
 	cout << "Введите число: ";
 	cin >> number;
 	if (number % 2 == 0)
@@ -39,7 +64,7 @@ int main()
 	{
 		number = number / 2;
 		cout << number;
-	}
+	}*/
 	/*double gr1, gr2, gr3, gr4, gr5, avggr;
 	cout << "Введите первую оценку: ";
 	cin >> gr1;	
