@@ -12,8 +12,207 @@ int main()
 	float pi = 3.14; */
 	/*double n1, n2, summa, proiz, average;*/
 	/*double n1, n2, n3, summa, proiz, average;*/
-	setlocale(LC_ALL, "Russian");
 
+	setlocale(LC_ALL, "Russian");
+	/*int totalnumber = 0, currentnumber = 1;
+	while (currentnumber != 0)
+	{
+		cout << "Введите число: ";
+		cin >> currentnumber;
+		totalnumber = totalnumber + currentnumber;
+	}
+	cout << totalnumber;*/
+	/*int start, end, num, total = 0;
+	cout << "Введите начальное число: ";
+	cin >> start;
+	cout << "Введите конечное число: ";
+	cin >> end;
+	num = start;
+	while (num != (end + 1))
+	{
+		total = total + num;
+		num = num + 1;
+	}
+	cout << total;*/
+	/*int start, end, num;
+	cout << "Введите начальное число: ";
+	cin >> start;
+	cout << "Введите конечное число: ";
+	cin >> end;
+
+	cout << "Четные числа диапазона: " << endl;
+	num = start;
+	while (num != (end + 1))
+	{
+		if (num % 2 == 0)
+		{
+			cout << num << endl;
+		}
+		num = num + 1;
+	}
+	cout << "Нечетные числа диапазона: " << endl;
+	num = start;
+	while (num != (end + 1))
+	{
+		if (num % 2 != 0)
+		{
+			cout << num << endl;
+		}
+		num = num + 1;
+	}
+	cout << "Числа кратные семи диапазона: " << endl;
+	num = start;
+	while (num != (end + 1))
+	{
+		if (num % 7 == 0)
+		{
+			cout << num << endl;
+		}
+		num = num + 1;
+	}*/
+	/*int Number, EndNum = 0;
+	cout << "Введите число: ";
+	cin >> Number;
+	while (EndNum != (Number + 1))
+	{
+		cout << EndNum << endl;
+		EndNum = EndNum + 1;
+	}*/
+	/*int ConsoleBGColor, TextColor, TextSize;
+	cout << "Выберите цвет консоли.\n0 — черный\n1 — синий\n2 — зеленый\n3 — голубой\n4 — красный\n5 — лиловый\n6 — желтый\n7 — белый\n8 — серый\n9 — свело - синий\n10 — светло - зеленый\n11 — светло - голубой\n12 — светло - красный\n13 — светло - желтый\n14 — ярко - белый\n\nВаш выбор: ";
+	cin >> ConsoleBGColor;
+	switch (ConsoleBGColor)
+	{
+	case 0:
+		system("color 00");
+		cout << "Hello World!";
+		break;
+	case 1:
+		system("color 10");
+		cout << "Hello World!";
+		break;
+	case 2:
+		system("color 20");
+		cout << "Hello World!";
+		break;
+	case 3:
+		system("color 30");
+		cout << "Hello World!";
+		break;
+	case 4:
+		system("color 40");
+		cout << "Hello World!";
+		break;
+	case 5:
+		system("color 50");
+		cout << "Hello World!";
+		break;
+	case 6:
+		system("color 60");
+		cout << "Hello World!";
+		break;
+	case 7:
+		system("color 70");
+		cout << "Hello World!";
+		break;
+	case 8:
+		system("color 80");
+		cout << "Hello World!";
+		break;
+	case 9:
+		system("color 90");
+		cout << "Hello World!";
+		break;
+	case 10:
+		system("color A0");
+		cout << "Hello World!";
+		break;
+	case 11:
+		system("color B0");
+		cout << "Hello World!";
+		break;
+	case 12:
+		system("color C0");
+		cout << "Hello World!";
+		break;
+	case 13:
+		system("color E0");
+		cout << "Hello World!";
+		break;
+	case 14:
+		system("color F0");
+		cout << "Hello World!";
+		break;
+	default:
+		break;
+	}
+	cout << "Выберите цвет шрифта.\n0 — черный\n1 — синий\n2 — зеленый\n3 — голубой\n4 — красный\n5 — лиловый\n6 — желтый\n7 — белый\n8 — серый\n9 — свело - синий\n10 — светло - зеленый\n11 — светло - голубой\n12 — светло - красный\n13 — светло - желтый\n14 — ярко - белый\n\nВаш выбор: ";
+	cin >> TextColor;
+	switch (TextColor)
+	{
+	case 0:
+		system("color 00");
+		cout << "Hello World!";
+		break;
+	case 1:
+		system("color 01");
+		cout << "Hello World!";
+		break;
+	case 2:
+		system("color 02");
+		cout << "Hello World!";
+		break;
+	case 3:
+		system("color 03");
+		cout << "Hello World!";
+		break;
+	case 4:
+		system("color 04");
+		cout << "Hello World!";
+		break;
+	case 5:
+		system("color 05");
+		cout << "Hello World!";
+		break;
+	case 6:
+		system("color 06");
+		cout << "Hello World!";
+		break;
+	case 7:
+		system("color 07");
+		cout << "Hello World!";
+		break;
+	case 8:
+		system("color 08");
+		cout << "Hello World!";
+		break;
+	case 9:
+		system("color 09");
+		cout << "Hello World!";
+		break;
+	case 10:
+		system("color 0A");
+		cout << "Hello World!";
+		break;
+	case 11:
+		system("color 0B");
+		cout << "Hello World!";
+		break;
+	case 12:
+		system("color 0C");
+		cout << "Hello World!";
+		break;
+	case 13:
+		system("color 0E");
+		cout << "Hello World!";
+		break;
+	case 14:
+		system("color 0F");
+		cout << "Hello World!";
+		break;
+	default:
+		break;
+	}*/
 
 
 	/*double n1, n2, result;
