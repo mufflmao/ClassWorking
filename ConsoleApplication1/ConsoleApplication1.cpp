@@ -14,6 +14,92 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
+	/*int valuefrom, valueto;
+	double valuenum;
+	cout << "Выберите валюту для перевода ИЗ:\n1. Евро\n2. Рубли\n3. Тенге\nВаш выбор: ";
+	cin >> valuefrom;
+	cout << "Количество: ";
+	cin >> valuenum;
+	cout << "Выберите валюту для перевода В:\n1. Евро\n2. Рубли\n3. Тенге\nВаш выбор: ";
+	cin >> valueto;
+	if (valuefrom == 1)
+	{
+		if (valueto == 1)
+		{
+			cout << "Ошибка: выбраны две одинаковые валюты.";
+		}
+		if (valueto == 2)
+		{
+			valuenum = valuenum * 90;
+			cout <<"Ответ: " << valuenum << "RUB";
+		}
+		if (valueto == 3)
+		{
+			valuenum = valuenum * 524;
+			cout << "Ответ: " << valuenum << "KZT";
+		}
+	}	
+	if (valuefrom == 2)
+	{
+		if (valueto == 1)
+		{
+			valuenum = valuenum * 0.011;
+			cout << "Ответ: " << valuenum << "EUR";
+		}
+		if (valueto == 2)
+		{
+			cout << "Ошибка: выбраны две одинаковые валюты.";
+		}
+		if (valueto == 3)
+		{
+			valuenum = valuenum * 5.83;
+			cout << "Ответ: " << valuenum << "KZT";
+		}
+	}	
+	if (valuefrom == 3)
+	{
+		if (valueto == 1)
+		{
+			valuenum = valuenum * 0.0019;
+			cout << "Ответ: " << valuenum << "EUR";
+		}
+		if (valueto == 2)
+		{
+			valuenum = valuenum * 0.17;
+			cout << "Ответ: " << valuenum << "RUB";
+		}
+		if (valueto == 3)
+		{
+			cout << "Ошибка: выбраны две одинаковые валюты.";
+		}
+	}*/
+	/*srand(time(0));
+	int resultnum = rand() % 500 + 1;
+	int usernum;
+	for (int n = 0; n <= 15; n++)
+	{
+		cout << "Попробуй угадать мое число!: ";
+		cin >> usernum;
+		if (usernum == resultnum)
+		{
+			cout << "Это оно!" << endl;
+			cout << "Ты потратил " << n << " попыток";
+			break;
+		}
+		else
+		{
+			cout << "Нет, это не " << usernum << endl;
+			if (usernum > resultnum)
+			{
+				cout << "Нужное число меньше чем " << usernum << endl;
+			}
+			if (usernum < resultnum)
+			{
+				cout << "Нужное число больше чем " << usernum << endl;
+			}
+		}
+	}*/
+
 	/*int totalnumber = 0, currentnumber = 1;
 	while (currentnumber != 0)
 	{
