@@ -14,6 +14,156 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
+	/*int width, length; (НЕДАДЕЛАННАЯ ШТУКА)
+	char symbol;
+	cout << "Введите ширину: ";
+	cin >> width;
+	cout << "Введите длину: ";
+	cin >> length;
+	cout << "Введите символ: ";
+	cin >> symbol;
+	length = length - 2;
+	cout << symbol * width;
+	for (int i = 0; i <= length - 2; i++)
+	{
+		cout << symbol << " " * length;
+	}*/
+
+	/*int i, j, N = 9;
+	int center = N / 2;
+	for (i = 0; i < N; i++)
+	{
+		for (j = 0; j < N; j++)
+		{
+			if (i <= center)
+			{
+				if (j >= center - i && j <= center + i)
+					cout << "*";
+				else
+					cout << " ";
+			}
+			else
+			{
+				if (j >= center + i - N + 1 && j <= center - i + N - 1)
+					cout << "*";
+				else
+					cout << " ";
+			}
+		}
+		cout << endl;
+	}
+	system("PAUSE");*/
+	int num1, num2, questions, qasked, difficulty, realanswer, useranswer, points = 0, grade = 0;
+	cout << "ДАННЫЙ КАЛЬКУЛЯТОР НЕДОПИСАН, ПОТОМУ ЧТО АВТОРУ ЛЕНЬ!";
+	cout << "Добро пожаловать на проверку знаний таблицы умножения.\n\nВыберите сложность (1-3): ";
+	cin >> difficulty;
+	if (difficulty == 1)
+	{
+		questions = 3;
+		for (int qasked = 0; qasked < questions; qasked++)
+		{
+			srand(time(NULL));
+			num1 = rand() % 5 + 1;
+			num2 = rand() % 5 + 1;
+			realanswer = num1 * num2;
+			cout << num1 << " * " << num2 << " = ";
+			cin >> useranswer;
+			if (useranswer == realanswer)
+			{
+				points = points + 1;
+				cout << "Ответ правильный!" << endl;
+			}
+			else
+			{
+				cout << "Ответ неправильный!" << endl;
+			}
+		}
+		if (points == 3)
+		{
+			grade = 5;
+		}
+		if (points == 2)
+		{
+			grade = 4;
+		}
+		if (points == 1)
+		{
+			grade = 3;
+		}
+		if (points == 0)
+		{
+			grade = 2;
+		}
+		cout << "Ваша оценка: " << grade;
+	}
+	if (difficulty == 2)
+	{
+		questions = 4;
+		for (int qasked = 0; qasked <= questions; qasked++)
+		{
+			srand(time(NULL));
+			num1 = rand() % 20 + 1;
+			num2 = rand() % 20 + 1;
+			realanswer = num1 * num2;
+			cout << num1 << " * " << num2 << " = ";
+			cin >> useranswer;
+			if (useranswer == realanswer)
+			{
+				points++;
+				cout << "Ответ правильный!" << endl;
+			}
+			else
+			{
+				cout << "Ответ неправильный!" << endl;
+			}
+		}
+		if (points == 4)
+		{
+			grade = 5;
+		}
+		if (points == 3)
+		{
+			grade = 4;
+		}
+		if (points == 2)
+		{
+			grade = 4;
+		}
+		if (points == 1)
+		{
+			grade = 3;
+		}
+		if (points == 0)
+		{
+			grade = 2;
+		}
+		cout << "Ваша оценка: " << grade;
+
+	}
+	if (difficulty == 3)
+	{
+		questions = 5;
+		for (int qasked = 0; qasked <= questions; qasked++)
+		{
+			srand(time(NULL));
+			num1 = rand() % 100 + 1;
+			num2 = rand() % 100 + 1;
+			realanswer = num1 * num2;
+			cout << num1 << " * " << num2 << " = ";
+			cin >> useranswer;
+			if (useranswer == realanswer)
+			{
+				points++;
+				cout << "Ответ правильный!" << endl;
+			}
+			else
+			{
+				cout << "Ответ неправильный!" << endl;
+			}
+		}
+		grade = points;
+		cout << "Ваша оценка: " << grade;
+	}
 	/*int xmasballs = 100, xmastree = 20, xmasstar = 35, xmassparklers = 400;
 	double menuchoice, product, amount, discount = 0.9, price;
 	int xmasballsPrice = 3, xmastreePrice = 100, xmasstarPrice = 5, xmassparklersPrice = 1;
