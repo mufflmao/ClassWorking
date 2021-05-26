@@ -14,6 +14,146 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
+	/*int xmasballs = 100, xmastree = 20, xmasstar = 35, xmassparklers = 400;
+	double menuchoice, product, amount, discount = 0.9, price;
+	int xmasballsPrice = 3, xmastreePrice = 100, xmasstarPrice = 5, xmassparklersPrice = 1;
+	string productName;
+	while (1 != 0)
+	{
+		cout << "Главное меню.\n\nВыберите пункт меню.\n1. Сделать продажные рассчеты.\n2. Посмотреть наличие товаров.\n3. Завоз товаров.\n\nСегодня у нас скидка 10% на все.\n\nВаш выбор: ";
+		cin >> menuchoice;
+		system("cls");
+		if (menuchoice == 1)
+		{
+			cout << "1. Новогодние шарики.\n2. Елки\n3. Звезды на елку\n4. Бенгальские огни\n\nВыберите товар: ";
+			cin >> product;
+			system("cls");
+			cout << "Количество продукта: ";
+			cin >> amount;
+			system("cls");
+			if (product == 1)
+			{
+				if (xmasballs - amount < 0)
+				{
+					cout << "Ошибка! Недостаток товара!";
+					cin >> product;
+				}
+				else
+				{
+					price = xmasballsPrice * amount * discount;
+					xmasballs = xmasballs - amount;
+					productName = "Новогодние шарики";
+					cout << "Чек.\n\n" << productName << " - " << amount << "шт.\n\nК оплате: " << price << "$.\nОжидание подтверждения оплаты...";
+					cin >> product;
+				}
+			}
+			if (product == 2)
+			{
+				if (xmastree - amount < 0)
+				{
+					cout << "Ошибка! Недостаток товара!";
+					cin >> product;
+				}
+				else
+				{
+					price = xmastreePrice * amount * discount;
+					xmastree = xmastree - amount;
+					productName = "Новогодняя елка";
+					cout << "Чек.\n\n" << productName << " - " << amount << "шт.\n\nК оплате: " << price << "$.\nОжидание подтверждения оплаты...";
+					cin >> product;
+				}
+			}
+			if (product == 3)
+			{
+				if (xmasstar - amount < 0)
+				{
+					cout << "Ошибка! Недостаток товара!";
+					cin >> product;
+				}
+				else
+				{
+					price = xmasstarPrice * amount * discount;
+					xmasstar = xmasstar - amount;
+					productName = "Новогодняя звезда на елку";
+					cout << "Чек.\n\n" << productName << " - " << amount << "шт.\n\nК оплате: " << price << "$.\nОжидание подтверждения оплаты...";
+					cin >> product;
+				}
+			}
+			if (product == 4)
+			{
+				if (xmassparklers - amount < 0)
+				{
+					cout << "Ошибка! Недостаток товара!";
+					cin >> product;
+				}
+				else
+				{
+					price = xmassparklersPrice * amount * discount;
+					xmassparklers = xmassparklers - amount;
+					productName = "Бенгальские огни";
+					cout << "Чек.\n\n" << productName << " - " << amount << "шт.\n\nК оплате: " << price << "$.\nОжидание подтверждения оплаты...";
+					cin >> product;
+				}
+			}
+
+			system("cls");
+		}
+		if (menuchoice == 2)
+		{
+			cout << "Меню наличия товаров.\n\nНовогодние шарики - " << xmasballs << "шт.\nЕлки - " << xmastree << "шт.\nЗвезды на елку - " << xmasstar << "шт.\nБенгальские огни - " << xmassparklers << "шт.\n\nЧтобы выйти в главное меню введите 0...\n";
+			cin >> menuchoice;
+			system("cls");
+		}
+		if (menuchoice == 3)
+		{
+			cout << "Что завозим?\n\n1. Новогодние шарики.\n2. Елки\n3. Звезды на елку\n4. Бенгальские огни\n\nВыберите товар: ";
+			cin >> product;
+			system("cls");
+			cout << "Сколько завезли?: ";
+			cin >> amount;
+			system("cls");
+			if (product == 1)
+			{
+				xmasballs = xmasballs + amount;
+			}
+			if (product == 2)
+			{
+				xmastree = xmastree + amount;
+			}
+			if (product == 3)
+			{
+				xmasstar = xmasstar + amount;
+			}
+			if (product == 4)
+			{
+				xmassparklers = xmassparklers + amount;
+			}
+			cout << "Готово!";
+			cin >> product;
+			system("cls");
+		}
+	}*/
+	/*int fnum, snum, midnum = 0, checknum;
+	cout << "Число начала диапазона: ";
+	cin >> fnum;
+	cout << "Число конца диапазона: ";
+	cin >> snum;
+	midnum = snum + 2;
+	checknum = snum + 1;
+	while (checknum != midnum)
+	{
+		cout << "Число в диапазоне: ";
+		cin >> midnum;
+		for (int checknum = fnum; checknum <= snum; checknum++)
+		{
+			if (checknum == midnum)
+			{
+				cout << "Число присутствует в диапазоне.\n";
+			}
+		}
+	}*/
+
+
 	/*int valuefrom, valueto;
 	double valuenum;
 	cout << "Выберите валюту для перевода ИЗ:\n1. Евро\n2. Рубли\n3. Тенге\nВаш выбор: ";
@@ -484,7 +624,6 @@ int main()
 	cout << "Периметр окружности: " << P << endl;
 	cout << "Площадь окружности: " << S << endl;*/
 
-	
 	
 	/*cout << "Вычисление расстояние между населенными пунктами" << endl;
 	cout << "Введите исходные данные: " << endl;
