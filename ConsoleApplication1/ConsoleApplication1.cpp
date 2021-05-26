@@ -53,7 +53,7 @@ int main()
 		cout << endl;
 	}
 	system("PAUSE");*/
-	int num1, num2, questions, qasked, difficulty, realanswer, useranswer, points = 0, grade = 0;
+	/*int num1, num2, questions, qasked, difficulty, realanswer, useranswer, points = 0, grade = 0;
 	cout << "ДАННЫЙ КАЛЬКУЛЯТОР НЕДОПИСАН, ПОТОМУ ЧТО АВТОРУ ЛЕНЬ!";
 	cout << "Добро пожаловать на проверку знаний таблицы умножения.\n\nВыберите сложность (1-3): ";
 	cin >> difficulty;
@@ -163,7 +163,7 @@ int main()
 		}
 		grade = points;
 		cout << "Ваша оценка: " << grade;
-	}
+	}*/
 	/*int xmasballs = 100, xmastree = 20, xmasstar = 35, xmassparklers = 400;
 	double menuchoice, product, amount, discount = 0.9, price;
 	int xmasballsPrice = 3, xmastreePrice = 100, xmasstarPrice = 5, xmassparklersPrice = 1;
