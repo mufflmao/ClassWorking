@@ -15,7 +15,15 @@ int main()
 
 	setlocale(LC_ALL, "Russian");
 
-
+	/*int x[10] = { 5,3,5,6,8,1,2,6,8,1 };
+	for (int i = 1; i < 10; i++)
+		for (int j = i; j > 0 && x[j - 1] > x[j]; j--)
+		{
+			swap(x[j - 1], x[j]);
+		}
+	for (int i = 0; i < 10; i++) {
+		cout << x[i] << " ";
+	}*/
 	/*int digitals[10];
 
 	cout << "Введите 10 чисел для заполнения массива: " << endl;
