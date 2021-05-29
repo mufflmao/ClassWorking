@@ -15,7 +15,7 @@ int main()
 
 	setlocale(LC_ALL, "Russian");
 
-	int grades[10], menuchoice, IsTeacher, uselessvar, examreplayelementnubmer, examreplayreplace;
+	int grades[9], menuchoice, IsTeacher, uselessvar, examreplayelementnubmer, examreplayreplace;
 	cout << "Вы учитель? (0 если нет, 1 если да): ";
 	cin >> IsTeacher;
 	system("cls");
@@ -28,7 +28,7 @@ int main()
 			system("cls");
 			if (menuchoice == 1)
 			{
-				for (int i = 0; i <= 10; i++)
+				for (int i = 0; i < 10; i++)
 				{
 					cout << "Поочередно вводите оценки." << endl;
 					cout << "Оценка " << i + 1 << ": ";
@@ -52,7 +52,7 @@ int main()
 			system("cls");
 			if (menuchoice == 1)
 			{
-				for (int i = 0; i <= 10; i++)
+				for (int i = 0; i < 10; i++)
 				{
 					cout << i + 1 << " оценка : " << grades[i] << endl;
 				}
@@ -62,14 +62,14 @@ int main()
 			if (menuchoice == 2)
 			{
 				cout << "Текущие оценки:\n\n";
-				for (int i = 0; i <= 10; i++)
+				for (int i = 0; i < 10; i++)
 				{
 					cout << i + 1 << " оценка : " << grades[i] << endl;
 				}
 				cout << "Выберите номер оценки для исправления: ";
 				cin >> examreplayelementnubmer;
 				system("cls");
-				for (int i = 0; i <= 10; i++)
+				for (int i = 0; i < 10; i++)
 				{
 					cout << i + 1 << " оценка : " << grades[i] << endl;
 				}
@@ -84,7 +84,7 @@ int main()
 			if (menuchoice == 3)
 			{
 				int avgpoint = 0;
-				for (int i = 0; i <= 10; i++)
+				for (int i = 0; i < 10; i++)
 				{
 					avgpoint = avgpoint + grades[i];
 				}
