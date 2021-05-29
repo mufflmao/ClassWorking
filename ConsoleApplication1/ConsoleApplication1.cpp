@@ -14,6 +14,35 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
+
+
+	/*srand(time(0));
+	const int n(10);
+	int arr[n];
+	cout << "Your arr : ";
+	for (int i = 0; i < n; ++i) {
+		arr[i] = rand() % 5;
+		cout << arr[i] << " ";
+	}
+	for (int i = 0; i < n; ++i)
+	{
+		if (arr[i] == 0)
+		{
+			for (int j = i; j < n - 1; ++j)
+			{
+				arr[j] = arr[j + 1];
+			}
+			arr[n - 1] = -1;
+			--i;
+		}
+	}
+	cout << "\nAfter :\n";
+	for (int i = 0; i < n; ++i)
+	{
+		cout << arr[i] << " ";
+		cout << endl;
+	}*/
+
 	/*int width, length; (НЕДАДЕЛАННАЯ ШТУКА)
 	char symbol;
 	cout << "Введите ширину: ";
