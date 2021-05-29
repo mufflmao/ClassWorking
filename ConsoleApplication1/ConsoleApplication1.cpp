@@ -15,6 +15,94 @@ int main()
 
 	setlocale(LC_ALL, "Russian");
 
+	int grades[10], menuchoice, IsTeacher, uselessvar, examreplayelementnubmer, examreplayreplace;
+	cout << "Вы учитель? (0 если нет, 1 если да): ";
+	cin >> IsTeacher;
+	system("cls");
+	if (IsTeacher == 1)
+	{
+		while (true)
+		{
+			cout << "Учительское меню.\n\n1. Выставить оценки.\n2. Перейти в ученическое меню.\n\nВаш выбор: ";
+			cin >> menuchoice;
+			system("cls");
+			if (menuchoice == 1)
+			{
+				for (int i = 0; i <= 10; i++)
+				{
+					cout << "Поочередно вводите оценки." << endl;
+					cout << "Оценка " << i + 1 << ": ";
+					cin >> grades[i];
+					system("cls");
+				}
+			}
+			if (menuchoice == 2)
+			{
+				IsTeacher = 0;
+				break;
+			}
+		}
+	}
+	if (IsTeacher == 0)
+	{
+		while (true)
+		{
+			cout << "Главное меню.\n\n1. Вывод оценок.\n2. Пересдача экзамена\n3. Информация о степендии.\n\nВыберите пункт меню: ";
+			cin >> menuchoice;
+			system("cls");
+			if (menuchoice == 1)
+			{
+				for (int i = 0; i <= 10; i++)
+				{
+					cout << i + 1 << " оценка : " << grades[i] << endl;
+				}
+				cin >> uselessvar;
+				system("cls");
+			}
+			if (menuchoice == 2)
+			{
+				cout << "Текущие оценки:\n\n";
+				for (int i = 0; i <= 10; i++)
+				{
+					cout << i + 1 << " оценка : " << grades[i] << endl;
+				}
+				cout << "Выберите номер оценки для исправления: ";
+				cin >> examreplayelementnubmer;
+				system("cls");
+				for (int i = 0; i <= 10; i++)
+				{
+					cout << i + 1 << " оценка : " << grades[i] << endl;
+				}
+				cout << "На какую оценку ее заменяем?: ";
+				cin >> examreplayreplace;
+				system("cls");
+				grades[examreplayelementnubmer - 1] = examreplayreplace;
+				cout << "Готово.";
+				cin >> uselessvar;
+				system("cls");
+			}
+			if (menuchoice == 3)
+			{
+				int avgpoint = 0;
+				for (int i = 0; i <= 10; i++)
+				{
+					avgpoint = avgpoint + grades[i];
+				}
+				avgpoint = avgpoint / 11;
+				cout << "Ваш средний балл: " << avgpoint << endl;
+				if (avgpoint > 10.7)
+				{
+					cout << "У вас выходит степендия.";
+				}
+				else
+				{
+					cout << "У вас не выходит степендия.";
+				}
+				cin >> uselessvar;
+				system("cls");
+			}
+		}
+	}
 	/*int x[10] = { 5,3,5,6,8,1,2,6,8,1 };
 	for (int i = 1; i < 10; i++)
 		for (int j = i; j > 0 && x[j - 1] > x[j]; j--)
