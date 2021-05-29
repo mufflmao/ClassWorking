@@ -16,6 +16,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 
 
+
 	/*srand(time(0));
 	const int n(10);
 	int arr[n];
