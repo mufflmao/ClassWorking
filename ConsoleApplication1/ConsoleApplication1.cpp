@@ -15,7 +15,7 @@ int main()
 
 	setlocale(LC_ALL, "Russian");
 
-	int grades[9], menuchoice, IsTeacher, uselessvar, examreplayelementnubmer, examreplayreplace;
+	/*int grades[9], menuchoice, IsTeacher, uselessvar, examreplayelementnubmer, examreplayreplace;
 	cout << "Вы учитель? (0 если нет, 1 если да): ";
 	cin >> IsTeacher;
 	system("cls");
@@ -102,7 +102,7 @@ int main()
 				system("cls");
 			}
 		}
-	}
+	}*/
 	/*int x[10] = { 5,3,5,6,8,1,2,6,8,1 };
 	for (int i = 1; i < 10; i++)
 		for (int j = i; j > 0 && x[j - 1] > x[j]; j--)
