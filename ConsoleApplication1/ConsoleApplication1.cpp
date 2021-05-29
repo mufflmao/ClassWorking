@@ -15,8 +15,59 @@ int main()
 
 	setlocale(LC_ALL, "Russian");
 
+	/*srand(time(0));
+	int const n = 5;
+	int arr1[n];
+	int arr2[n];
+	int arr[10];
+	int idx = 0;
+	cout << "Массив 1 " << endl;
+	for (int i = 0; i < n; i++) {
+		arr1[i] = rand() % 10 - 5;
+		cout << "[" << i << "] = " << arr1[i] << endl;
+	}
+	cout << endl;
+	cout << "Массив 2 " << endl;
+	for (int i = 0; i < n; i++) {
+		arr2[i] = rand() % 10 - 5;
+		cout << "[" << i << "] = " << arr2[i] << endl;
+	}
+	for (int i = 0; i < n; i++) {
+		if (arr1[i] > 0) {
+			arr[idx] = arr1[i];
+			idx++;
+		}
+		if (arr2[i] > 0) {
+			arr[idx] = arr2[i];
+			idx++;
+		}
+	}
 
+	for (int i = 0; i < n; i++) {
+		if (arr1[i] == 0) {
+			arr[idx] = arr1[i];
+			idx++;
+		}
+		if (arr2[i] == 0) {
+			arr[idx] = arr2[i];
+			idx++;
+		}
+	}
 
+	for (int i = 0; i < n; i++) {
+		if (arr1[i] < 0) {
+			arr[idx] = arr1[i];
+			idx++;
+		}
+		if (arr2[i] < 0) {
+			arr[idx] = arr2[i];
+			idx++;
+		}
+	}
+	cout << "Массив 3 = " << endl;
+	for (int i = 0; i < 10; i++) {
+		cout << "[" << i << "] = " << arr[i] << endl;
+	}*/
 	/*srand(time(0));
 	const int n(10);
 	int arr[n];
