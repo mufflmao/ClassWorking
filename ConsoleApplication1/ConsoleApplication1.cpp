@@ -14,6 +14,7 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
+
 	/*int width, length; (НЕДАДЕЛАННАЯ ШТУКА)
 	char symbol;
 	cout << "Введите ширину: ";
