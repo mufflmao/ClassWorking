@@ -4,6 +4,15 @@
 #include <windows.h>
 
 using namespace std;
+void findMax(int* first, int* second) {
+
+	int Max = *first;
+	if (*first < *second) {
+		Max = *second;
+	}
+
+	cout << "Maximum value is " << Max << endl;
+}
 
 int main()
 {
@@ -15,12 +24,12 @@ int main()
 
 	setlocale(LC_ALL, "Russian");
 
-	int n1, n2;
+	/*int n1, n2;
 	cout << "Введите первое число: ";
 	cin >> n1;
 	cout << "Введите второе число: ";
 	cin >> n2;
-
+	findMax(&n1, &n2);*/
 	/*int arr[10];
 	int arrnum;
 	cout << "Введите 10 чисел для заполнения массива: " << endl;
