@@ -13,7 +13,29 @@ void findMax(int* first, int* second) {
 
 	cout << "Maximum value is " << Max << endl;
 }
-
+void deerminePosNeg(int* number)
+{
+	cout << "Our number " << *number;
+	if (*number > 0)
+	{
+		cout << " = positive" << endl;
+	}
+	else if (*number < 0)
+	{
+		cout << " = negative" << endl;
+	}
+	else
+	{
+		cout << " = zero" << endl;
+	}
+}
+void exchangeVariables(int* firstVar, int* secondVar, int* midVar) {
+	cout << "До:\nvariable1 = " << *firstVar << "\nvariable2 = " << *secondVar << endl;
+	midVar = firstVar;
+	firstVar = secondVar;
+	secondVar = midVar;
+	cout << "После:\nvariable1 = " << *firstVar << "\nvariable2 = " << *secondVar;
+}
 int main()
 {
 	/*int griv, kop, mash, sm;*/
@@ -23,7 +45,17 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
-	
+
+	/*int var1, var2, midvar;
+	cout << "Введите первое число: ";
+	cin >> var1;
+	cout << "Введите второе число: ";
+	cin >> var2;
+	exchangeVariables(&var1, &var2, &midvar);*/
+	/*int number;
+	cout << "Введите число: ";
+	cin >> number;
+	deerminePosNeg(&number);*/
 	/*int n1, n2;
 	cout << "Введите первое число: ";
 	cin >> n1;
