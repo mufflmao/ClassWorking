@@ -14,6 +14,38 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
+	int arr[4][4];
+
+	/*int arr[10];
+	int arrnum;
+	cout << "Введите 10 чисел для заполнения массива: " << endl;
+	for (int i = 0; i < 10; i++) 
+	{
+		cin >> arr[i];
+	}
+	cout << "Введите число в массиве: ";
+	cin >> arrnum;
+	bool flag = false;
+	int l = 0;
+	int r = 9;
+	int mid;
+	while ((l <= r) && (flag != true)) 
+	{
+		mid = (l + r) / 2;
+
+		if (arr[mid] == arrnum) flag = true;
+		if (arr[mid] > arrnum) r = mid - 1;
+		else l = mid + 1;
+	}
+	if (flag) 
+	{
+		cout << "Индекс элемента " << arrnum << " в массиве равен: " << mid;
+	}
+	else
+	{
+		cout << "Извините, но такого элемента в массиве нет";
+	}*/
+
 
 	/*int grades[9], menuchoice, IsTeacher, uselessvar, examreplayelementnubmer, examreplayreplace;
 	cout << "Вы учитель? (0 если нет, 1 если да): ";
