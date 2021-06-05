@@ -43,9 +43,8 @@ int main()
 	float pi = 3.14; */
 	/*double n1, n2, summa, proiz, average;*/
 	/*double n1, n2, n3, summa, proiz, average;*/
-
 	setlocale(LC_ALL, "Russian");
-
+	
 	/*int var1, var2, midvar;
 	cout << "Введите первое число: ";
 	cin >> var1;
