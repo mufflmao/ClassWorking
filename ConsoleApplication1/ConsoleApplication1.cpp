@@ -14,7 +14,12 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
-	int arr[4][4];
+
+	int n1, n2;
+	cout << "Введите первое число: ";
+	cin >> n1;
+	cout << "Введите второе число: ";
+	cin >> n2;
 
 	/*int arr[10];
 	int arrnum;
