@@ -23,13 +23,15 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 
 	setlocale(LC_ALL, "Russian");
-
+	
 	/*int n1, n2;
 	cout << "Введите первое число: ";
 	cin >> n1;
 	cout << "Введите второе число: ";
 	cin >> n2;
 	findMax(&n1, &n2);*/
+
+
 	/*int arr[10];
 	int arrnum;
 	cout << "Введите 10 чисел для заполнения массива: " << endl;
