@@ -45,6 +45,117 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 	setlocale(LC_ALL, "Russian");
 	
+	//week 4 hw starts here
+
+	//Задание 1. Пользователь вводит с клавиатуры целое шестизначное число. Написать программу, которая определяет, является ли введенное число — счастливым (Счастливым считается шестизначное число, у которого сумма первых 3 цифр равна сумме вторых трех цифр). Если пользователь ввел не шестизначное число — сообщение об ошибке. 
+	/*int number;
+	cout << "Введите шестизначное число: ";
+	cin >> number;
+	if (number < 100000 || number > 999999)
+	{
+		cout << "Ошибка: Вы ввели не шестизначное число.";
+	}
+	else if (((number / 100000) + ((number / 10000) % 10) + ((number / 1000) % 10)) == (((number / 100) % 10) + ((number / 10) % 10) + (number % 10)))
+	{
+		cout << "Число счастливое!";
+	}
+	else
+	{
+		cout << "Число не счастливое.";
+	}*/
+	//Задание 2. Пользователь вводит четырехзначное число. Необходимо поменять в этом числе 1 и 2 цифры, а также 3 и 4 цифры. Если пользователь вводит не четырехзначное число — вывести сообщение об ошибке.
+	/*int number, fir, sec, thir, four, exch1, exch2;
+	cout << "Введите четырехзначное число: ";
+	cin >> number;
+	if (number < 1000 || number > 9999)
+	{
+		cout << "Ошибка: Вы ввели не четырехзначное число.";
+	}
+	else
+	{
+		sec = number / 1000;
+		fir = number / 100 % 10;
+		four = number / 10 % 10;
+		thir = number % 10;
+		cout << fir << sec << thir << four;
+	}*/
+	//Задание 3. Пользователь вводит с клавиатуры 7 целых чисел.Напишите программу, которая определяет максимальное из этих 7 чисел(Подсказка — решение должнобыть простым).
+	/*cout << "Поочередно напишите 7 чисел: ";
+	int a;
+	cin >> a;
+	int b;
+	cin >> b;
+	if (a < b)
+		a = b;
+	cin >> b;
+	if (a < b)
+		a = b;
+	cin >> b;
+	if (a < b)
+		a = b;
+	cin >> b;
+	if (a < b)
+		a = b;
+	cin >> b;
+	if (a < b)
+		a = b;
+	cin >> b;
+	if (a < b)
+		a = b;
+	cout << "Max: " << a;*/
+	//Задание 4. Грузовой самолет должен пролететь с грузом из пункта А в пункт С через пункт В. Емкость бака для топлива у самолета — 300 литров. Потребление топлива на 1 км в зависимости от веса груза у самолета следующее:
+	double buck = 300;
+	int fAtB, fBtC, grooz, lkm, totalway, time;
+	bool canHold, abilityToGo = true;
+	cout << "Расстояние от A до B: ";
+	cin >> fAtB;
+	cout << "Расстояние от B до C: ";
+	cin >> fBtC;
+	cout << "Вес груза: ";
+	cin >> grooz;
+	if (grooz < 500)
+	{
+		lkm = 1;
+		canHold = true;
+	}
+	else if (grooz < 1000)
+	{
+		lkm = 4;
+		canHold = true;
+	}
+	else if (grooz < 1500)
+	{
+		lkm = 7;
+		canHold = true;
+	}
+	else if (grooz < 2000)
+	{
+		lkm = 9;
+		canHold = true;
+	}
+	else if (grooz > 2000)
+	{
+		canHold = false;
+	}
+	totalway = fAtB + fBtC;
+	int fatblkm, fbtclkm;
+	fatblkm = fAtB / lkm;
+	fbtclkm = fBtC / lkm;
+	time = totalway / lkm;
+	if (time < 0)
+	{
+		abilityToGo = false;
+	}
+	if (!canHold)
+	{
+		cout << "Самолет не выдержит такой груз.";
+	}
+	else if (!abilityToGo)
+	{
+		cout << "Самолет не сможет пролететь так далеко.";
+	}
+
+
 
 
 	/*int var1, var2, midvar;
