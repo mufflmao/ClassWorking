@@ -45,7 +45,7 @@ int main()
 	/*double n1, n2, n3, summa, proiz, average;*/
 	setlocale(LC_ALL, "Russian");
 	
-	//week 4 hw starts here
+	//4 НЕДЕЛЯ ДОМАШНЯЯ РАБОТА
 
 	//Задание 1. Пользователь вводит с клавиатуры целое шестизначное число. Написать программу, которая определяет, является ли введенное число — счастливым (Счастливым считается шестизначное число, у которого сумма первых 3 цифр равна сумме вторых трех цифр). Если пользователь ввел не шестизначное число — сообщение об ошибке. 
 	/*int number;
@@ -257,6 +257,143 @@ int main()
     cout << "ЗП 1 менеджера:" << a << "$" << endl;
     cout << "ЗП 2 менеджера:" << b << "$" << endl;
     cout << "ЗП 3 менеджера:" << c << "$" << endl;*/
+
+
+	//5 НЕДЕЛЯ ДОМАШНЯЯ РАБОТА
+
+	//Задание 1. Пользователь вводит с клавиатуры символ. Определить, какой это символ : Буква, цифра, знак препинания или другое.
+	/*char a;
+	cout << "Введите символ " << endl;
+	cin >> a;
+	if (a >= '0' && a <= '9') {
+		cout << "Вы ввели цифру" << endl;
+	}else if (a >= 'a' && a <= 'z') {
+		cout << "Вы ввели букву" << endl;
+	}
+	else if (a >= 'A' && a <= 'Z') {
+		cout << "Вы ввели букву" << endl;
+	}
+	else if (a == '.' || a == ',' || a == '"' || a == ';' || a == ':') {
+		cout << "Вы ввели знак препинания" << endl;
+	}
+	else if (a == '+' || a == '-' || a == '*' || a == '/' || a == '%') {
+		cout << "Вы ввели математическую операцию" << endl;
+	}*/
+	//Задание 2. Написать программу подсчета стоимости разговора для разных мобильных операторов. Пользователь вводит стоимость разговора и выбирает с какого на какой оператор он звонит.Вывести стоимость на экран.
+	/*int k;
+    double time;
+    double const aa=1.09, bb=1.02, ab=1.27;
+    cout << "Сколько минут вы наговорили?: "; 
+    cin >> time;
+    cout << "Выберите операторов: 1 - МТС:Мегафон, 2 - Теле2:Мегафон, 3 - Мегафон:Билайн : ";    
+    cin >> k;
+    
+    switch (k) 
+    {
+    case 1: 
+    {
+    cout <<"Стоимость: "<<time*aa<<"\n";
+    break;
+    }
+    case 2: 
+    {
+    cout <<"Стоимость: "<<time*bb<<"\n";
+    break;
+    }
+    case 3: 
+    {
+    cout <<"Стоимость:"<<time*ab<<"\n";
+    break;
+    }     
+    default: 
+    cout << "Ошибка\n";
+    }*/
+	//Задание 3. Вася работает программистом и получает 50$ за каждые 100 строк кода.За каждое третье опоздание Васю штрафуют на 20$.Реализовать меню :
+	/*int option;
+	int FINE = 20;
+	double SALARY = 0.5;
+    float desireIncome;
+    int numberOfDelays;
+    int numberOfLinesOfCode;
+    int minusForDelays;
+    float plusForCode;
+ 
+    cout << "Введи 1 если знаешь\n"
+        "- Доход\n"
+        "- Кол-во опозданий\n"
+        "Введи 2 если знаешь\n"
+        "- Доход\n"
+        "- Кол-во строчек кода\n"
+        "Введи 3 если знаешь\n"
+        "- Кол-во опозданий\n"
+        "- Кол-во строк кода\n";
+    cin >> option;
+ 
+    switch (option)
+    {
+    case 1:
+        cout << "Введи доход: ";
+        cin >> desireIncome;
+        cout << "Введи количетсво опоздания : ";
+        cin >> numberOfDelays;
+        if (desireIncome < 0 || numberOfDelays < 0)
+        {
+            cout << "Ошибка\n";
+            return 1;
+        }
+        cout << "\n";
+
+        minusForDelays = FINE * (int) (numberOfDelays / 3);
+
+        numberOfLinesOfCode = (desireIncome + minusForDelays) / SALARY;
+        cout << "Вася должен написать " << numberOfLinesOfCode << " строк кода\n";
+        break;
+    case 2:
+        cout << "Введитe доход: ";
+        cin >> desireIncome;
+        cout << "Введите количество строк кода: ";
+        cin >> numberOfLinesOfCode;
+        if (desireIncome < 0 || numberOfLinesOfCode < 0)
+        {
+            cout << "Ошибка\n";
+            return 1;
+        }
+        cout << "\n";
+        plusForCode = SALARY * numberOfLinesOfCode;
+        if (desireIncome > plusForCode)
+        {
+            cout << "Этого недостаточно для зарплаты\n";
+            return 2;
+        }
+        numberOfDelays = (plusForCode - desireIncome) / FINE + 2;
+        cout << "Вася может опоздать " << numberOfDelays << " раз\n";
+        break;
+    case 3:
+        cout << "Введите количество опозданий: ";
+        cin >> numberOfDelays;
+        cout << "Введите количество строк кода: ";
+        cin >> numberOfLinesOfCode;
+        if (numberOfDelays < 0 || numberOfLinesOfCode < 0)
+        {
+            cout << "Ошибка\n";
+            return 1;
+        }
+        cout << "\n";
+        plusForCode = SALARY * numberOfLinesOfCode;
+        minusForDelays = FINE * (int)(numberOfDelays / 3);
+        if (plusForCode < minusForDelays)
+        {
+            cout << "Недостаточно строк кода для получения зарплаты\n";
+            return 3;
+        }
+        desireIncome = plusForCode - minusForDelays;
+        cout << "Вася получит $" << desireIncome << "\n";
+        break;
+    default:
+        cout << "Неверное число\n";
+        return 4;
+    }*/
+
 
 
 	/*int var1, var2, midvar;
