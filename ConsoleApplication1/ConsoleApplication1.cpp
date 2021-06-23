@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
+#include <iomanip>
 
 using namespace std;
 void findMax(int* first, int* second) {
@@ -76,6 +77,41 @@ int digit(int x, int y)
 		}
 	}
 	return 0;
+}
+void card(int suit, int num)
+{
+	char card[13] = { 'A','2','3','4','5','6','7','8','9','0','J','Q','K' };
+	cout << " ___________________\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	if (num == 10)cout << '|' << setw(4) << "1" << card[num - 1] << "              |\n";
+	else cout << '|' << setw(4) << card[num - 1] << "               |\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	switch (suit)
+	{
+	case 1: cout << '|' << setw(12) << "ЧЕРВИ" << "       |\n"; break;
+	case 2: cout << '|' << setw(12) << "БУБНЫ" << "       |\n"; break;
+	case 3: cout << '|' << setw(12) << "ТРЕФЫ" << "       |\n"; break;
+	case 4: cout << '|' << setw(12) << "ПИКА" << "       |\n"; break;
+	}
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	cout << "|                   |\n";
+	if (num == 10)cout << "|              " << "1" << card[num - 1] << "   |\n";
+	else cout << "|               " << card[num - 1] << "   |\n";
+	cout << "|                   |\n";
+	cout << "|___________________|\n";
+}
+int isHappy(unsigned int num)
+{
+	if (num < 100000 || num > 999999)
+		return -1;
+	return ((num / 100000) + ((num / 10000) % 10) + ((num / 1000) % 10)) == (((num / 100) % 10) + ((num / 10) % 10) + (num % 10));
 }
 
 int main()
@@ -557,11 +593,37 @@ int main()
 	cin >> n2;
 	digit(n1, n2);*/
 	
+		//Задание 4. Написать функцию, выводящую на экран переданную ей игральную карту
+	
+	/*int a, s;
+	cout << "Введите карту\n1 - Туз \n2 - Два\n3 - Три\n4 - Четыре\n5 - Пять\n6 - Шесть\n7 - Семь\n8 - Восемь\n9 - Девять\n10 - Десять\n11 - Валет\n12 - Дама\n13 - Король" << endl;
+	cin >> a;
+	cout << "\n\t\t\tМасти\n1. Черви\n2. Бубны\n3. Трефы\n4. Пика\n";
+	cout << "Введите масть: ";
+	cin >> s;
+	card(s, a);*/
+
+		//Задание 5. Написать функцию, которая определяет, является ли «счастливым» шестизначное число.
+
+	/*int res;
+	cout << "Введите шестизначное число: ";
+	cin >> res;
+	res = isHappy(res);
+	if (res == 1)
+	cout << "happy" << endl;
+	else if (res == 0)
+	cout << "not happy" << endl;
+	else
+	cout << "error" << endl;*/
 
 
 
 
 
+
+
+		//Дальше бога нет, только классная работа и практика. ---------------------------------------------------------------------------------------------------------------------------------
+		
 	/*int var1, var2, midvar;
 	cout << "Введите первое число: ";
 	cin >> var1;
