@@ -153,7 +153,7 @@ int difference(int d1, int d2, int m1, int m2, int y1, int y2)
 void massivmidarif(int massive[], int massivesize)
 {
 	int result = 0;
-	for (int i = 0; i <= massivesize -1; i++)
+	for (int i = 0; i <= massivesize; i++)
 	{
 		result = result + massive[i];
 	}
@@ -683,14 +683,14 @@ int main()
 
 		//Задание 2. Написать функцию, определяющую среднее арифметическое элементов передаваемого ей массива.
 
-	/*int massivesize, massivenumber, massivee[1];
+	/*int massivesize, massivenumber, massivee[100];
 	cout << "Введите размер массива: ";
 	cin >> massivesize;
 	for (int i = 0; i <= massivesize; i++)
 	{
 		cout << "Введите число в для массива: ";
 		cin >> massivenumber;
-		massivee[i] == massivenumber;
+		massivee[i] = massivenumber;
 	}
 	massivmidarif(massivee, massivesize);*/
 
