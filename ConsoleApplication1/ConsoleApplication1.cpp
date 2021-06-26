@@ -6,6 +6,7 @@
 #include <conio.h>
 #include <cmath>
 #include <cstdlib>
+#include <vector>
 
 using namespace std;
 void findMax(int* first, int* second) {
@@ -206,6 +207,151 @@ bool f(int s) {
 		if (f(s + 1)) return true;
 	}
 	return false;
+}
+int* proverca(int* A, int* B, int size1, int size2) {
+	int* ptr;
+	int i = 0;
+	for (i = 0; i < size1; i++) {
+		int j = i, k = 0;
+		while (j < size1 && k < size2 && B[k] == A[j]) {
+			j++;
+			k++;
+		}if (k == size2)
+			return ptr = A + i;
+
+	}
+	return 0;
+}
+
+//пятнашки
+using std::vector;
+using std::cout;
+const unsigned short SIZEE = 4;
+vector<int> in_game_map(SIZEE);
+vector<vector<int>> game_map(SIZEE, in_game_map);
+vector<int> in_right_map(SIZEE);
+vector<vector<int>> right_map(SIZEE, in_right_map);
+struct coordinate // хранилище координат нулевого элемента
+{
+	unsigned x;
+	unsigned y;
+} zero;
+void create_right_map() // создаем правильную карту заполненую по порядку
+{
+	unsigned right_value = 1;
+	for (unsigned i = 0; i < SIZEE; i++)
+	{
+		for (unsigned j = 0; j < SIZEE; j++)
+			right_map[i][j] = right_value++;
+	}
+	right_map[SIZEE - 1][SIZEE - 1] = 0; // нулевой элемент в нижний правый угол
+}
+void create_game_map() // рандомно создаем игровую карту
+{
+	unsigned limit = SIZEE * SIZEE;
+	vector<int> temporary; // временный массив из которого будем брать значения в игровую карту
+	for (unsigned i = 0; i < limit; i++)
+		temporary.push_back(i);
+
+	int value;
+	for (unsigned i = 0; i < SIZEE; i++)
+	{
+		for (unsigned j = 0; j < SIZEE; j++)
+		{
+			value = rand() % limit--;
+			game_map[i][j] = temporary[value];
+			if (temporary[value] == 0) // сохраняем координаты нулевого элемента
+			{
+				zero.x = j;
+				zero.y = i;
+			}
+			temporary.erase(temporary.begin() + value);
+		}
+	}
+}
+bool check_map() // сравнение игровой и правильной карты для определения конца игры
+{
+	if (game_map == right_map)
+		return true;
+	return false;
+}
+void up_move() // ход вверх (нулевой элемент вниз)
+{
+	if (zero.y < SIZEE - 1)
+	{
+		game_map[zero.y][zero.x] = game_map[zero.y + 1][zero.x];
+		zero.y++;
+		game_map[zero.y][zero.x] = 0;
+	}
+}
+void down_move() // ход вниз (нулевой элемент вверх)
+{
+	if (zero.y > 0)
+	{
+		game_map[zero.y][zero.x] = game_map[zero.y - 1][zero.x];
+		zero.y--;
+		game_map[zero.y][zero.x] = 0;
+	}
+}
+void right_move() // ход вправо (нулевой элемент влево)
+{
+	if (zero.x > 0)
+	{
+		game_map[zero.y][zero.x] = game_map[zero.y][zero.x - 1];
+		zero.x--;
+		game_map[zero.y][zero.x] = 0;
+	}
+}
+void left_move() // ход влево (нулевой элемент вправо)
+{
+	if (zero.x < SIZEE - 1)
+	{
+		game_map[zero.y][zero.x] = game_map[zero.y][zero.x + 1];
+		zero.x++;
+		game_map[zero.y][zero.x] = 0;
+	}
+}
+void get_direction() // определяем нажатую игроком стрелку
+{
+	int move = static_cast<int> (_getch()); // UP = 72, DOWN = 80, RIGHT = 77, LEFT = 75
+	switch (move)
+	{
+	case 72:
+	{
+		up_move(); break;
+	}
+	case 80:
+	{
+		down_move(); break;
+	}
+	case 77:
+	{
+		right_move(); break;
+	}
+	case 75:
+	{
+		left_move(); break;
+	}
+	default:
+	{
+		get_direction();
+	}
+	}
+}
+void screen() // выводим массив на экран
+{
+	system("cls");
+	for (unsigned i = 0; i < SIZEE; i++)
+	{
+		for (unsigned j = 0; j < SIZEE; j++)
+		{
+			if (game_map[i][j] != 0)
+				cout << std::setw(2) << std::setfill('0') << game_map[i][j] << ' ';
+			else
+				cout << "** "; // нулевой элемент
+		}
+		cout << '\n';
+	}
 }
 
 int main()
@@ -756,7 +902,22 @@ int main()
 
 		//Задание 2. Написать игру «Пятнашки».
 
-	
+	/*srand(static_cast<int>(time(NULL)));
+
+	create_right_map();
+	do
+	{
+		create_game_map();
+	} while (check_map());
+
+	do
+	{
+		screen();
+		get_direction();
+	} while (!check_map());
+
+	cout << "\nYou win!\nGame over!\n";
+	_getch();*/
 
 		//Задание 3. Написать игру «Крестики - нолики».
 
@@ -861,7 +1022,23 @@ int main()
 
 		//Задание 1. Написать программу, которая содержит функцию Action, принимающую в качестве аргумента, указатели на два массива (А и В) и размеры массивов, а также указатель на функцию. Пользователю отображается меню, в котором он может выбрать max, min, avg.Если выбран max — передается указатель на функцию, которая ищет максимум, если выбран min — передается указатель на функцию, которая ищет минимум, если выбран avg — передается указатель на функцию, которая ищет среднее. Возвращаемое значение функции Action результат выбора пользователя max, min, avg.
 
-	
+	/*int size1, size2;
+	cout << "Введите размер массива A: ";
+	cin >> size1;
+	int* A = new int[size1 + 1];
+	cout << "Заполните массив: ";
+	for (int i = 0; i < size1; i++)
+		cin >> A[i];
+	cout << "Введите размер массива B: ";
+	cin >> size2;
+	int* B = new int[size2];
+	cout << "Заполните массив: ";
+	for (int i = 0; i < size2; i++)
+		cin >> B[i];
+	cout << "Элемент должен стоять на позиции " << proverca(A, B, size1, size2) << endl;
+	delete[]A;
+	delete[]B;
+	return 0;*/
 
 	//Дальше бога нет, только классная работа и практика. -------------------------------------------------------------------------------------------------------------------
 		
