@@ -917,7 +917,7 @@ int main()
 	} while (!check_map());
 
 	cout << "\nYou win!\nGame over!\n";
-	_getch();*/
+	_getch();*/ 
 
 		//Задание 3. Написать игру «Крестики - нолики».
 
@@ -1017,6 +1017,132 @@ int main()
 		}
 	}
 	if (!(k)) cout << "Игра закончилась вничью!" << endl;*/
+
+	//14 НЕДЕЛЯ ДОМАШНЯЯ РАБОТА ---------------------------------------------------------------------------------------------------------------------------------------------
+
+		//Задание 1. Даны два массива: А[M] и B[N] (M и N вводятся с клавиатуры).Необходимо создать третий массив минимально возможного размера, в котором нужно собрать элементы массива A, которые не включаются в массив B, без повторений.
+
+	/*int sizeA, sizeB;
+    cout << "Введите размер первого массива: ";
+    cin >> sizeA;
+    cout << "Введите размер второго массива: ";
+    cin >> sizeB;
+    int *arrA = new int[sizeA];
+    int *arrB = new int[sizeB];
+    cout << "\n\nПервый массив: ";
+    for (int x = 0; x < sizeA; x++)
+    {
+        arrA[x] = rand() % 9 + 1;
+        cout << arrA[x] << " ";
+    }
+    cout << "\n\nВторой массив: ";
+    for (int x = 0; x < sizeB; x++)
+    {
+        arrB[x] = rand() % 9 + 1;
+        cout << arrB[x] << " ";
+    }
+
+    int tmp = 0;
+    for (int x = 0; x < sizeA; x++)
+    {
+        for (int y = 0; y < sizeB; y++)
+        {
+            if (arrA[x] == arrB[y])
+            {
+                tmp++;
+            }
+        }
+    }
+
+    int sizeC = tmp;
+    int *arrtmp = new int[sizeC];
+    tmp = 0;
+    for (int y = 0; y < sizeB; y++)
+    {
+        for (int z = 0; z < sizeA; z++)
+        {
+            if (arrB[y] == arrA[z])
+            {
+                arrtmp[tmp] = arrB[y];
+                tmp++;
+            }
+        }
+    }
+
+    int *arrC = new int[sizeC];
+    cout << "\n\nТретий массив: ";
+    for (int x = 0; x < sizeC; x++)
+    {
+        arrC[x] = arrtmp[x];
+        cout << arrC[x] << " ";
+    }
+
+    delete arrA;
+    delete arrB;
+    delete arrC;
+    delete arrtmp;*/
+		
+		//Задание 2. Даны два массива: А[M] и B[N] (M и N вводятся с клавиатуры).Необходимо создать третий массив минимально возможного размера, в котором нужно собрать элементы массивов A и B, которые не являются общими для них, без повторений.
+
+	/*int sizeA, sizeB;
+	cout << "Введите размер первого массива: ";
+	cin >> sizeA;
+	cout << "Введите размер второго массива: ";
+	cin >> sizeB;
+	int* arrA = new int[sizeA];
+	int* arrB = new int[sizeB];
+	cout << "\n\nПервый массив: ";
+	for (int x = 0; x < sizeA; x++)
+	{
+		arrA[x] = rand() % 9 + 1;
+		cout << arrA[x] << " ";
+	}
+	cout << "\n\nВторой массив: ";
+	for (int x = 0; x < sizeB; x++)
+	{
+		arrB[x] = rand() % 9 + 1;
+		cout << arrB[x] << " ";
+	}
+
+	int tmp = 0;
+	for (int x = 0; x < sizeA; x++)
+	{
+		for (int y = 0; y < sizeB; y++)
+		{
+			if (arrA[x] == arrB[y])
+			{
+				tmp++;
+			}
+		}
+	}
+
+	int sizeC = tmp;
+	int* arrtmp = new int[sizeC];
+	tmp = 0;
+	for (int y = 0; y < sizeB; y++)
+	{
+		for (int z = 0; z < sizeA; z++)
+		{
+			if (arrB[y] == arrA[z])
+			{
+				arrtmp[tmp] = arrB[y];
+				tmp++;
+			}
+		}
+	}
+
+	int* arrC = new int[sizeC];
+	cout << "\n\nТретий массив: ";
+	for (int x = 0; x < sizeC; x++)
+	{
+		arrC[x] = arrtmp[x];
+		cout << arrC[x] << " ";
+	}
+
+	delete arrA;
+	delete arrB;
+	delete arrC;
+	delete arrtmp;*/
 
 	//15 НЕДЕЛЯ ДОМАШНЯЯ РАБОТА ---------------------------------------------------------------------------------------------------------------------------------------------
 
